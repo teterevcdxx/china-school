@@ -1,3 +1,7 @@
+@font-face{
+    font-family: 'Old Standard TT', serif;
+    src: url("https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700");
+}
 *{
     font-family: 'Old Standard TT', serif;
 }
