@@ -1,5 +1,5 @@
 import React from "react"
-import style from "./all.module.css"
+import style from "./sidemedia.module.css"
 
 export default ()=>(
     <div className={style.sidebarMedia}>

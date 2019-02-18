@@ -1,4 +1,4 @@
-import style from "./all.module.css";
+import style from "./location.module.css";
 import React from "react";
 export default () => (
   <div className={style.map}>

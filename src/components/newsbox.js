@@ -1,5 +1,5 @@
 import React from "react"
-import style from "./all.module.css"
+import style from "./newsbox.module.css"
 import { Link } from "gatsby"
 import container from "./container";
 export default class Menu extends React.Component {

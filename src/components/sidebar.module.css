@@ -1,0 +1,115 @@
+
+.sidebar{
+    width: 30%;
+    height: 100%;
+    /* display: none; */
+}
+.sideb a{
+    color: rgba(82%,31%,19%,1.00);
+    text-decoration: none;
+    margin: auto;
+    display: block;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    margin-top: 0px;
+    margin-bottom: 6vh;
+    user-select: none;
+    
+}
+
+
+.sidebtn img{
+    width: 24px;
+}
+.modal{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.438); 
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity linear 0.2s;
+    visibility: visible;
+}
+.menu{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(15%,10%,12%,1.00);
+    z-index: 2;
+    /* display: none; */
+    overflow: hidden;
+}
+.menuitems{
+    display: flex;
+    flex-direction: column;
+    
+}
+.menuitems a{
+    margin: 10px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.menu img{
+    width: 24px;
+    height: 24px;
+    margin: 24px;
+}
+.modalhide{
+    transition: opacity linear 0.2s;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.menubutton{
+    text-align: right;
+    height: 60px;
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    .menuitems{
+        text-align: center;
+        margin: auto;
+        margin-top: 16%;
+       
+    }
+    .menuitems a{
+        font-size: 26px;
+    }
+    .sideb a{
+        margin-top: 20px;
+    }
+}
+@media only screen and (min-width: 1030px) {
+    .sidebar{
+        display: block;
+    }
+    .menu img{
+        margin: 31px;
+    }
+    .sideb img{
+        width: 24px;
+    }
+    .menuitems{
+        text-align: center;
+        margin: auto;
+        margin-top: 16%;
+    }
+    .menu{
+        width: 25%;
+    }
+    .sideb a{
+        position: absolute;
+        top: 32px;
+        right: 25px;
+    }
+}

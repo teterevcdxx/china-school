@@ -1,0 +1,134 @@
+
+.newsbox{
+    width: 70vw;
+    height: 50vh;
+    margin: auto;
+    margin-top: 10vh;
+    border-top: 5px solid rgba(82%,31%,19%,1.00);
+    background-color: #00000078;
+    padding: 20px;
+}
+span{
+    background-color: rgba(82%,31%,19%,1.00);
+    padding: 3px;
+    color: white;
+}
+.newsbox h1{
+    color: white;
+}
+.newsbox h3{
+    color: white;
+}
+.won h1{
+    color: black;
+    margin: auto;
+    margin-top: 24vh;
+    width: 260px;
+    text-align: center;
+}
+.won h3{
+    color: rgb(80, 80, 80);
+    text-align: center;
+}
+.won{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background-color: #fff;
+}
+.won a{
+    color: white;
+    display: block;
+    width: 180px;
+    height: 30px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(82%,31%,19%,1.00);
+    padding: 5px 15px 15px 5px;
+    border: 1px solid #fff;
+    
+}
+.newsbox a{
+    color: white;
+    padding: 10 15 15 5;
+    text-decoration: none;
+    border: 1px solid #fff;
+    display: block;
+    /* margin-top: 50px; */
+    width: 180px;
+    padding-top: 5px;
+    height: 30px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    .newsbox{
+        width: 60vw;
+        height: 20vh;
+        margin: auto;
+        margin-top: 20vh;
+        border-top: 5px solid rgba(82%,31%,19%,1.00);
+        background-color: #00000078;
+    }
+    .won h1{
+        font-size: 50px;
+    }
+    .won a{
+        color: white;
+        padding: 5px 15px 15px 5px;
+        text-decoration: none;
+        border: 1px solid #fff;
+        display: block;
+        width: 180px;
+        height: 30px;
+        margin-right: 20px;
+    }
+    span{
+        font-size: inherit;
+        background-color: rgba(82%,31%,19%,1.00);
+        color: white;
+    }
+}
+@media only screen and (min-width: 1030px) {
+    .won a{
+        color: white;
+        padding: 5px 15px 15px 5px;
+        text-decoration: none;
+        border: 1px solid #fff;
+        display: block;
+        width: 180px;
+        height: 30px;
+        margin-right: 20px;
+    }
+    .won{
+        border-top: 5px solid rgba(82%,31%,19%,1.00);
+        background-color: #00000078;
+        padding: 20px;
+        width: 30vw;
+        height: 180px;
+        margin: auto;
+        margin-top: 40vh;
+        margin-left: 100px;
+    }
+    .won h1{
+        color: white;
+        margin-top: 20px;
+    }
+    .won h3{
+        color: white;
+    }
+    .newsbox{
+        width: 30vw;
+        height: 180px;
+        margin: auto;
+        margin-top: 40vh;
+        margin-left: 100px;
+    }
+    .won h1{ 
+        text-align: left;
+        display: inline;
+    }
+}

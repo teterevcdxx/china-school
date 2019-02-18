@@ -1,6 +1,5 @@
 import React from "react"
-import style from "./all.module.css"
-import select from "./login.module.css"
+import style from "./login.module.css"
 
 export default class Login extends React.Component {
     render(){
@@ -11,7 +10,7 @@ export default class Login extends React.Component {
                         <input type="text" name="name" placeholder="name*"/>
                         <input type="text" name="e-mail" placeholder="e-mail*"/>
                         <input type="text" name="phone" placeholder="phone*"/>
-                        <div className={select.selectstyle}>
+                        <div className={style.selectstyle}>
                             <select name="course" placeholder="course*">
                                 <option value="intensive">intensive</option>
                                 <option value="base">base</option>

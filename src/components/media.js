@@ -1,5 +1,5 @@
 import React from "react"
-import style from "./all.module.css"
+import style from "./media.module.css"
 export default () => (
     <div className={style.media}>
             <a href="#">

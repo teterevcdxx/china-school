@@ -1,3 +1,4 @@
+
 .selectstyle {
     /* border: 0px solid #ccc; */
     width: 252px;
@@ -27,4 +28,62 @@ select option{
 
 .selectstyle select:focus {
     outline: none;
+}
+
+
+.loginModal{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+  
+}
+.loginForm{
+    width: 300px;
+    height: 340px;
+    background-color: white;
+    margin: auto;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"]{
+    border: none;
+    margin: auto;
+    font-size: 20px;
+    display: block;
+    padding: 5px;
+    margin-top: 20px;
+    border-bottom: 2px solid rgba(15%,10%,12%,1.00);
+    outline: none;
+    
+}
+form a{
+    color: white;
+    background-color: rgba(82%,31%,19%,1.00);
+    border: none;
+    outline: none;
+    padding: 8px 20px 8px 20px;
+    display: block;
+    margin: auto;
+    margin-right: 30px;
+    margin-top: 30px;
+    text-decoration: none;
+    text-align: center;
+    width: 120px;
+}
+form{
+    margin-top: 20px;
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {}
+@media only screen and (min-width: 1030px) {
+    .loginForm{
+        margin-top: 20vh;
+    }
+    .loginModal{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.507);
+        top: 0;
+        left: 0;
+    }
 }

@@ -1,5 +1,5 @@
 import React from "react"
-import style from "./all.module.css"
+import style from "./sidebar.module.css"
 import { Link } from "gatsby"
 // import Menubutton from "../components/menubutton";
 

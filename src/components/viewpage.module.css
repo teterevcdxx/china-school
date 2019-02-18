@@ -1,0 +1,13 @@
+
+.viewpage{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {}
+@media only screen and (min-width: 1030px) {
+    .viewpage{
+        width: 95%;
+    }
+}

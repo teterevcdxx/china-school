@@ -1,5 +1,5 @@
 import React from "react"
-import style from "./all.module.css"
+import style from "./header.module.css"
 import { Link } from "gatsby"
 
 export default ({children }) => (

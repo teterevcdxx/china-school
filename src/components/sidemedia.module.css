@@ -1,0 +1,22 @@
+
+.sidebarMedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 6%;
+    height: 100%;
+    text-align: center;
+    display: none;
+}
+.sidebarMedia img{
+    width: 32px;
+    height: 32px;
+    margin: 10px;
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {}
+@media only screen and (min-width: 1030px) {
+    .sidebarMedia{
+        display: flex;
+    }
+}
