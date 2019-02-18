@@ -13,7 +13,7 @@
     /* margin: 20px; */
     justify-content: space-between;
     font-size: 20px;
-    height: 14%;
+    height: 16vh;
 }
 .logobox{
     display: flex;
@@ -352,14 +352,13 @@ form{
 }
 .map{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: white;
     display: flex;
-
 }
 iframe{
     width: 100vw;
-    height: 87vh;
+    height: 100%;
     border: 0;
 }
 @media only screen and (min-width: 1030px) {
@@ -468,5 +467,6 @@ iframe{
     }
     .map{
         width: 95vw;
+        height: 100%;
     }
 }
