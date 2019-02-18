@@ -24,7 +24,7 @@ render(){
                 </a>  
                     <div className ={style.menuitems}>
                     <Link to="/">Pricing</Link>
-                <Link to="/">Location</Link>
+                <Link to="/location/">Location</Link>
                 <Link to="/">Courses</Link>
                 <Link to="/">Book-lesson</Link>
                 <Link to="/" style={{ fontSize: '30px', color: 'rgba(82%,31%,19%,1.00)' }}>皮</Link>
