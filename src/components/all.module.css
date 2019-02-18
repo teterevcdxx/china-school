@@ -52,6 +52,7 @@
     height: 100vh;
     display: flex;
     position: relative;
+    overflow: hidden;
 }
 .sidebar{
     width: 30%;
