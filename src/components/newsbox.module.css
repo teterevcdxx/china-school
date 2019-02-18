@@ -52,7 +52,7 @@ span{
 }
 .newsbox a{
     color: white;
-    padding: 10 15 15 5;
+    padding: 10px 15px 15px 5px;
     text-decoration: none;
     border: 1px solid #fff;
     display: block;
