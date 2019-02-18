@@ -201,6 +201,7 @@ span{
     left: 0;
     opacity: 1;
     transition: opacity linear 0.2s;
+    visibility: visible;
 }
 .menu{
     width: 50%;
@@ -231,7 +232,11 @@ span{
 .modalhide{
     transition: opacity linear 0.2s;
     opacity: 0;
-    display: none;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    visibility: hidden;
 }
 .menubutton{
     text-align: right;
