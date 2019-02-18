@@ -17,10 +17,12 @@
     user-select: none;
     
 }
-
-
+.sideb img{
+    width: 28px;
+}
 .sidebtn img{
     width: 24px;
+    height: 24px;
 }
 .modal{
     width: 100vw;
