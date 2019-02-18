@@ -1,3 +1,7 @@
+@font-face{
+    font-family: 'Old Standard TT', serif;
+    src: url("https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700")
+}
 *{
     margin: 0;
     padding: 0;
@@ -155,7 +159,7 @@ span{
 }
 .newsbox a{
     color: white;
-    padding: 5 15 15 5;
+    padding: 10 15 15 5;
     text-decoration: none;
     border: 1px solid #fff;
     display: block;
