@@ -1,0 +1,23 @@
+.preloader{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.preloader h2{
+    -webkit-animation: blink 1s linear infinite;
+    -moz-animation: blink 1s linear infinite;
+    animation: blink 1s linear infinite;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 40vh;
+    font-size: 32px;
+}
+@keyframes blink {  
+    0% { color: rgb(207, 113, 5); }
+    100% { color: rgb(68, 68, 68); }
+}
+  @-webkit-keyframes blink {
+    0% { color: rgb(207, 113, 5); }
+    100% { color: rgb(68, 68, 68); }
+}

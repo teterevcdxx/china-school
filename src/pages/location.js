@@ -8,20 +8,44 @@ import Container from "../components/container"
 import Media from "../components/media"
 import Sidemedia from "../components/sideMedia"
 import { Helmet } from "react-helmet"
+import Preloader from "../components/preloader"
 
-export default () => (
-    <Layout>
-      <Viewpage>
-      <Helmet>
-          <meta charSet="utf-8" />
-          <title>China-school | Location</title>
-          <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700" rel="stylesheet"></link>
-      </Helmet>
-      <Header><Sidebar/></Header>
-      <Container>
-        <Location/>
-      </Container>
-      </Viewpage>
-      <Sidemedia/>
-    </Layout>
-  )
+  export default class Locationpage extends React.Component {
+    constructor(){
+      super()
+      this.state ={ isLoading: true };
+    }
+    componentDidMount(){
+      setInterval(() => {
+        this.setState({isLoading: false});
+      }, 1200);
+    }
+    preloader(){
+      return(
+        <Preloader/>
+      )
+    }
+    page(){
+      return(
+        <Layout>
+        <Viewpage>
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>China-school | Location</title>
+            <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700" rel="stylesheet"></link>
+        </Helmet>
+        <Header><Sidebar/></Header>
+        <Container>
+          <Location/>
+        </Container>
+        </Viewpage>
+        <Sidemedia/>
+      </Layout>
+      )
+    }
+    render(){
+      return(
+        this.state.isLoading ? this.preloader() : this.page()
+      )
+    }
+    }

@@ -7,6 +7,18 @@
     display: flex;
     position: relative;
     overflow: hidden;
+    opacity: 1;
+    transition: opacity, linear 0.2s;
+}
+.nonpage{
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity, linear 0.2s;
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {}
 @media only screen and (min-width: 1030px) {}

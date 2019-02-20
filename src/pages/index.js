@@ -9,9 +9,26 @@ import Newsbox from "../components/newsbox"
 import Media from "../components/media"
 import Sidemedia from "../components/sideMedia"
 import { Helmet } from "react-helmet"
+import Preloader from "../components/preloader"
 
-export default () => (
-  <Layout>
+export default class Page extends React.Component {
+  constructor(){
+    super()
+    this.state ={ isLoading: true };
+  }
+  componentDidMount(){
+    setInterval(() => {
+      this.setState({isLoading: false});
+    }, 1200);
+  }
+  preloader(){
+    return(
+      <Preloader/>
+    )
+  }
+  page(){
+    return(
+    <Layout>
     <Viewpage>
     <Helmet>
           <meta charSet="utf-8" />
@@ -26,5 +43,12 @@ export default () => (
     </Viewpage>
     <Sidemedia/>
   </Layout>
-)
+    )
+  }
+  render(){
+    return(
+      this.state.isLoading ? this.preloader() : this.page()
+    )
+  }
+  }
 
